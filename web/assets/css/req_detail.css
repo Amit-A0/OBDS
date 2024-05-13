@@ -1,0 +1,75 @@
+#content2{
+    position: sticky;
+}
+
+.block{
+    padding: 20px;
+}
+
+.innerBlock_1 {
+    border: 0.5px solid hsl(0, 0%, 93%);
+    padding: 0;
+    border-radius: 20px;
+    position: sticky;
+    text-align: center;
+}
+
+.book_details h5{
+    color: #3d5a83;
+}
+
+.book_details p{
+color: #323232;
+}
+
+#content3{
+    padding: 20px;
+}
+
+.innerBlock2 h5{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3d5a83;
+}
+
+.innerBlock2 .request_details{
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.innerBlock2 .lable{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #3d5a83;
+}
+
+@media screen and (max-width: 1000px) {
+    .innerBlock2 h4{
+        font-size: 1.5rem;
+    }
+    .innerBlock2 p{
+        font-size: 1rem;
+    }
+}
+
+.form :where(.condition-option, .condition) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    padding: 3px;
+}
+
+.form .condition {
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+
+#exchange_img{
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+}
