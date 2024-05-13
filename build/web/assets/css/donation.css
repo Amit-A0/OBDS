@@ -1,0 +1,237 @@
+#home_link {
+    background-color: #cbcbcb;
+    padding: 12px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+#home_link i {
+    text-decoration: none;
+    text-align: center;
+    color: #312f91;
+    font-size: 40px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: "poppins"; */
+}
+
+/* body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #edf2f6;
+} */
+
+
+#content1 {
+    background-color: #edf2f6;
+}
+
+
+.donation-section {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.donation-section header {
+    font-size: 1.5rem;
+    color: #ee6c4d;
+    font-weight: 500;
+    text-align: center;
+}
+
+.donation-section .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #73aac9;
+}
+
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.address :whrer(input, .select-box) {
+    margin-top: 15px;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.form .condition-box {
+    margin-top: 20px;
+}
+
+.condition-box h3 {
+    color: #73aac9;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.form :where(.condition-option, .condition) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .condition {
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+.form :where(.condition input, .condition label) {
+    cursor: pointer;
+}
+
+.form #donate_btn {
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    background-color: #98c1d9;
+}
+
+.form #donate_btn:hover {
+    background-color: #73aac9;
+}
+
+/* responsive */
+
+@media screen and (max-width: 500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+    .form :where(.condition-option, .condition) {
+        row-gap: 15px;
+    }
+}
+
+/* CSS FOR UPLOAD IMAGE */
+.imgContainer {
+    height: 100%;
+}
+
+.wrapper {
+    background: #fff;
+    border-radius: 9px;
+    transition: height 0.2s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper.active {
+    height: 100%;
+}
+
+.wrapper .upload-box {
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #afafaf;
+    transition: 0.3s;
+}
+
+.wrapper input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: none;
+}
+
+.wrapper i {
+    display: block;
+    font-size: 35px;
+    color: grey;
+    transition: 200ms color;
+}
+
+.wrapper .upload-box:hover {
+    border: 2px solid #ee6c4d;
+
+}
+
+.wrapper:hover i,
+.wrapper:hover p {
+    color: #ee6c4d;
+    display: inline-block;
+}
+
+.wrapper.active .upload-box {
+    border: none;
+}
+
+.upload-box p {
+    font-size: 1.06rem;
+    margin-top: 8px;
+}
+
+.wrapper.active .upload-box p {
+    display: none;
+}
+
+.wrapper.active .upload-box img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.wrapper.active .upload-box i {
+    display: none;
+}

@@ -1,0 +1,70 @@
+#home_link {
+    background-color: #cbcbcb;
+    padding: 12px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+#home_link i {
+    text-decoration: none;
+    text-align: center;
+    color: #312f91;
+    font-size: 40px;
+}
+
+.block{
+    padding: 20px;
+}
+
+.innerBlock_1 {
+    border: 0.5px solid hsl(0, 0%, 93%);
+    padding: 0;
+    border-radius: 20px;
+    position: sticky;
+    text-align: center;
+}
+
+#content3{
+    padding: 20px;
+}
+
+.innerBlock2 .book_details h4{
+    font-size: 2.5rem;
+    font-weight: 370;
+    color: #3d5a83;
+}
+
+.innerBlock2 .book_details p{
+    font-size: 1.4rem;
+    color: #6c6c6c;
+}
+
+.innerBlock2 h5{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #3d5a83;
+}
+
+.innerBlock2 .donor_details{
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+.innerBlock2 .lable{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #3d5a83;
+}
+
+@media screen and (max-width: 1000px) {
+    .innerBlock2 h4{
+        font-size: 1.5rem;
+    }
+    .innerBlock2 p{
+        font-size: 1rem;
+    }
+}
