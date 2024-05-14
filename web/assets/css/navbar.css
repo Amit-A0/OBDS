@@ -1,0 +1,127 @@
+/* 1st header */
+.main-navbar{
+	display: block !important;
+}
+
+.header-top {
+	background-color: aliceblue;
+}
+
+#LOGO {
+	max-width: 100%;
+}
+
+.register-box {
+	border: 5px solid silver;
+	border-radius: 10px;
+	padding: 10px 40px;
+	text-align: center;
+}
+
+.register-box h6 {
+	font-weight: 700;
+	font-size: 18px;
+	color: #2f5391;
+}
+
+/* Register btn CSS <start> */
+.register-btn {
+	line-height: 1;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: .75rem;
+	background-color: var(--clr);
+	color: #fff;
+	border-radius: 10rem;
+	font-weight: 600;
+	padding: .50rem 1.5rem;
+	padding-left: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: background-color .3s;
+}
+
+.button__icon-wrapper {
+	flex-shrink: 0;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	color: var(--clr);
+	background-color: #fff;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+
+.register-btn:hover {
+	background-color: #000;
+}
+
+.register-btn:hover .button__icon-wrapper {
+	color: #000;
+}
+
+.btn_icon_copy {
+	position: absolute;
+	transform: translate(-150%, 150%);
+}
+
+.register-btn:hover .btn_icon:first-child {
+	transition: transform .3s ease-in-out;
+	transform: translate(150%, -150%);
+}
+
+.register-btn:hover .btn_icon_copy {
+	transition: transform .3s ease-in-out .1s;
+	transform: translate(0);
+}
+/* Register btn CSS <end> */
+
+@media screen and (max-width: 991.5px) {
+	.register-box {
+		display: none;
+	}
+}
+
+/* 2nd header header */
+.header-bottom{
+	background-color: rgb(240, 240, 240);
+	display: block;
+}
+
+.header-bottom .nav-item{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.header-bottom .nav-item .nav-link{
+	font-weight: 600;
+	color: #312f91;
+}
+
+.header-bottom .nav-item .active{
+	color: orangered !important;
+}
+
+.header-bottom .nav-item:hover .nav-link{
+	color: orangered;
+}
+
+@media screen and (max-width: 991.5px) {
+	.navbar-list {
+		text-align: center;
+		font-size: larger;
+	}
+	.register_link{
+		display: list-item !important;
+	}
+}
+
+@media screen and (min-width: 991.5px) {
+	.register_link{
+		display: none;
+	}
+}
